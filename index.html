@@ -13,110 +13,89 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="hero">
-      <nav class="nav">
-        <span class="logo">Onda&Análisis</span>
-        <div class="nav-links">
-          <a href="#servicios">Servicios</a>
-          <a href="#analisis">Análisis técnico</a>
-          <a href="#contacto" class="button">Agenda una sesión</a>
-        </div>
-      </nav>
-      <div class="hero-content">
-        <div>
-          <p class="eyebrow">Instructor de natación · Analista matemático</p>
-          <h1>Perfecciona tu técnica y entiende la ciencia detrás del agua.</h1>
-          <p class="lead">
-            Programas personalizados para cada estilo de natación, combinando entrenamiento en piscina con
-            análisis matemático para optimizar velocidad, eficiencia y rendimiento.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#contacto">Quiero mejorar ahora</a>
-            <a class="button ghost" href="#servicios">Ver planes</a>
+    <main class="layout">
+      <section class="column profile">
+        <nav class="nav">
+          <span class="logo">Onda&Análisis</span>
+          <div class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#agenda">Agenda</a>
           </div>
-          <div class="metrics">
+        </nav>
+
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <span>Tu foto profesional aquí</span>
+          </div>
+        </div>
+
+        <div class="bio">
+          <p class="eyebrow">Instructor de natación · Analista matemático</p>
+          <h1>Entrenamiento acuático con ciencia, precisión y resultados.</h1>
+          <p class="lead">
+            Soy instructor especializado en técnica y rendimiento con más de una década de experiencia en piscina.
+            Combino la biomecánica con el análisis matemático para perfeccionar cada brazada.
+          </p>
+          <div class="credentials">
             <div>
               <span class="metric-value">+10</span>
               <span class="metric-label">años en natación competitiva</span>
             </div>
             <div>
-              <span class="metric-value">4</span>
-              <span class="metric-label">estilos analizados a detalle</span>
+              <span class="metric-value">Cert.</span>
+              <span class="metric-label">entrenador de alto rendimiento</span>
             </div>
             <div>
-              <span class="metric-value">100%</span>
-              <span class="metric-label">sesiones personalizadas</span>
+              <span class="metric-value">Data</span>
+              <span class="metric-label">modelos matemáticos aplicados</span>
             </div>
           </div>
         </div>
-        <div class="hero-card">
-          <h3>Diagnóstico técnico inmediato</h3>
-          <p>
-            Combinamos medición de tiempos, cadencia y ángulos de brazada con visualización de datos para definir
-            tu plan de avance.
-          </p>
-          <ul>
-            <li>✔️ Evaluación en video y feedback en tiempo real</li>
-            <li>✔️ Modelos matemáticos para optimizar cada ciclo</li>
-            <li>✔️ Planes de fuerza y movilidad específicos</li>
-          </ul>
+
+        <div class="visuals">
+          <figure class="visual-card">
+            <div class="visual-image swimmer"></div>
+            <figcaption>Biomecánica: seguimiento de articulaciones y ángulos clave.</figcaption>
+          </figure>
+          <figure class="visual-card">
+            <div class="visual-image data"></div>
+            <figcaption>Matemáticas: análisis de ritmo, cadencia y eficiencia.</figcaption>
+          </figure>
         </div>
-      </div>
-    </header>
+      </section>
 
-    <section id="servicios" class="section">
-      <div class="section-header">
-        <p class="eyebrow">Servicios</p>
-        <h2>Entrenamientos con estrategia, datos y motivación.</h2>
-        <p class="lead">
-          Desde iniciación hasta alto rendimiento: cada sesión incluye objetivos claros, medición precisa y ajustes
-          técnicos para cada estilo.
-        </p>
-      </div>
-      <div class="card-grid">
-        <article class="card">
-          <h3>Natación técnica</h3>
-          <p>Dominio de crol, espalda, pecho y mariposa con ejercicios de corrección específicos.</p>
-          <span class="tag">Piscina + tierra</span>
-        </article>
-        <article class="card">
-          <h3>Plan de rendimiento</h3>
-          <p>Periodización de entrenamientos, control de carga y preparación para competencias.</p>
-          <span class="tag">Competitivo</span>
-        </article>
-        <article class="card">
-          <h3>Sesiones 1:1</h3>
-          <p>Coaching personalizado con foco en objetivos personales y progresos medibles.</p>
-          <span class="tag">Personalizado</span>
-        </article>
-      </div>
-    </section>
-
-    <section id="analisis" class="section alt">
-      <div class="analysis">
-        <div>
-          <p class="eyebrow">Análisis matemático</p>
-          <h2>Matemáticas aplicadas para nadar más rápido.</h2>
+      <section class="column services" id="servicios">
+        <div class="section-header">
+          <p class="eyebrow">Servicios</p>
+          <h2>Planifica tu progreso con métricas claras.</h2>
           <p class="lead">
-            Modelamos cada estilo con métricas de frecuencia, longitud de brazada y eficiencia energética para
-            encontrar mejoras concretas.
+            Diseño sesiones personalizadas para cada estilo, con objetivos medibles y ajustes técnicos basados en
+            datos.
           </p>
-          <ul class="analysis-list">
-            <li>
-              <strong>Cadencia óptima:</strong> cálculo de ritmo y distribución de energía por series.
-            </li>
-            <li>
-              <strong>Trayectoria eficiente:</strong> análisis de ángulos para minimizar resistencia y maximizar empuje.
-            </li>
-            <li>
-              <strong>Comparativa técnica:</strong> reportes visuales con progresos y objetivos alcanzables.
-            </li>
-          </ul>
         </div>
+
+        <div class="card-grid">
+          <article class="card">
+            <h3>Natación técnica</h3>
+            <p>Correcciones específicas para crol, espalda, pecho y mariposa.</p>
+            <span class="tag">Piscina + tierra</span>
+          </article>
+          <article class="card">
+            <h3>Análisis matemático</h3>
+            <p>Modelos de rendimiento, eficiencia energética y proyecciones de tiempo.</p>
+            <span class="tag">Ciencia aplicada</span>
+          </article>
+          <article class="card">
+            <h3>Sesiones 1:1</h3>
+            <p>Coaching individual con seguimiento semanal y reportes visuales.</p>
+            <span class="tag">Personalizado</span>
+          </article>
+        </div>
+
         <div class="analysis-panel">
           <h3>Reporte técnico mensual</h3>
           <p>
-            Entrego gráficos claros, recomendaciones específicas y simulaciones con escenarios de competencia.
+            Incluye mediciones de ritmo, longitud de brazada, trayectorias óptimas y comparativa con tus objetivos.
           </p>
           <div class="panel-metrics">
             <div>
@@ -128,44 +107,42 @@
               <span class="metric-label">reducción de resistencia</span>
             </div>
           </div>
-          <a class="button primary" href="#contacto">Quiero mi reporte</a>
         </div>
-      </div>
-    </section>
 
-    <section id="contacto" class="section">
-      <div class="contact">
-        <div>
-          <p class="eyebrow">Contacto</p>
-          <h2>Agenda tu sesión y comienza tu evolución.</h2>
-          <p class="lead">
-            Disponible para clases presenciales y acompañamiento remoto con análisis técnico semanal.
-          </p>
+        <div class="contact" id="agenda">
+          <div>
+            <p class="eyebrow">Agenda</p>
+            <h2>Reserva tu sesión y define tu próxima meta.</h2>
+            <p class="lead">
+              Disponible para clases presenciales y acompañamiento remoto con análisis técnico semanal.
+            </p>
+          </div>
+          <form class="contact-form">
+            <label>
+              Nombre completo
+              <input type="text" placeholder="Tu nombre" />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" placeholder="tu@email.com" />
+            </label>
+            <label>
+              Objetivo principal
+              <select>
+                <option>Mejorar técnica</option>
+                <option>Prepararme para competencia</option>
+                <option>Analizar mi rendimiento</option>
+              </select>
+            </label>
+            <button class="button primary" type="submit">Enviar solicitud</button>
+          </form>
         </div>
-        <form class="contact-form">
-          <label>
-            Nombre completo
-            <input type="text" placeholder="Tu nombre" />
-          </label>
-          <label>
-            Correo electrónico
-            <input type="email" placeholder="tu@email.com" />
-          </label>
-          <label>
-            Objetivo principal
-            <select>
-              <option>Mejorar técnica</option>
-              <option>Prepararme para competencia</option>
-              <option>Analizar mi rendimiento</option>
-            </select>
-          </label>
-          <button class="button primary" type="submit">Enviar solicitud</button>
-        </form>
-      </div>
-    </section>
 
-    <footer class="footer">
-      <p>© 2024 Onda&Análisis. Entrenamiento acuático y ciencia aplicada.</p>
-    </footer>
+        <footer class="footer">
+          <p>© 2024 Onda&Análisis. Entrenamiento acuático y ciencia aplicada.</p>
+        </footer>
+      </section>
+    </main>
   </body>
 </html>
+
