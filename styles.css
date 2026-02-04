@@ -209,16 +209,19 @@ footer{
   }
 }
 
-analysis-image {
+.analysis-image {
   margin-top: 24px;
-  text-align: center;
+  width: 100%;
+  overflow: hidden;       /* 🔒 evita que se salga */
 }
 
 .analysis-image img {
-  max-width: 100%;
+  display: block;
+  max-width: 100%;        /* 🔑 clave */
+  width: 100%;
   height: auto;
+  object-fit: contain;    /* mantiene proporción */
   border-radius: 16px;
   background: #fffdf2;
   padding: 12px;
   box-shadow: 0 8px 20px rgba(0,0,0,.08);
-}
