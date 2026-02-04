@@ -208,3 +208,17 @@ footer{
     grid-template-columns: 1fr;
   }
 }
+
+analysis-image {
+  margin-top: 24px;
+  text-align: center;
+}
+
+.analysis-image img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  background: #fffdf2;
+  padding: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.08);
+}
