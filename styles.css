@@ -1,288 +1,147 @@
-:root {
-  color-scheme: light;
-  --navy: #0b1d3a;
-  --teal: #2ec4b6;
-  --sky: #f0f7ff;
-  --mid: #1d4ed8;
-  --text: #0f172a;
-  --muted: #475569;
-  --card: #ffffff;
-  --shadow: 0 20px 60px rgba(15, 23, 42, 0.15);
-  --radius: 20px;
-}
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Instructor de Natación & Analista Técnico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <section class="column profile">
+        <nav class="nav">
+          <span class="logo">Onda&Análisis</span>
+          <div class="nav-links">
+            <a href="#servicios">Servicios</a>
+            <a href="#agenda">Agenda</a>
+          </div>
+        </nav>
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
+        <div class="photo-frame">
+          <div class="photo-placeholder">
+            <span>Tu foto profesional aquí</span>
+          </div>
+        </div>
 
-body {
-  font-family: "Manrope", "Segoe UI", sans-serif;
-  color: var(--text);
-  background: var(--sky);
-  line-height: 1.6;
-}
+        <div class="bio">
+          <p class="eyebrow">Instructor de natación · Analista matemático</p>
+          <h1>Entrenamiento acuático con ciencia, precisión y resultados.</h1>
+          <p class="lead">
+            Soy instructor especializado en técnica y rendimiento con más de una década de experiencia en piscina.
+            Combino la biomecánica con el análisis matemático para perfeccionar cada brazada.
+          </p>
+          <div class="credentials">
+            <div>
+              <span class="metric-value">+10</span>
+              <span class="metric-label">años en natación competitiva</span>
+            </div>
+            <div>
+              <span class="metric-value">Cert.</span>
+              <span class="metric-label">entrenador de alto rendimiento</span>
+            </div>
+            <div>
+              <span class="metric-value">Data</span>
+              <span class="metric-label">modelos matemáticos aplicados</span>
+            </div>
+          </div>
+        </div>
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
+        <div class="visuals">
+          <figure class="visual-card">
+            <div class="visual-image swimmer"></div>
+            <figcaption>Biomecánica: seguimiento de articulaciones y ángulos clave.</figcaption>
+          </figure>
+          <figure class="visual-card">
+            <div class="visual-image data"></div>
+            <figcaption>Matemáticas: análisis de ritmo, cadencia y eficiencia.</figcaption>
+          </figure>
+        </div>
+      </section>
 
-.hero {
-  background: linear-gradient(135deg, #0b1d3a 0%, #1d4ed8 45%, #2ec4b6 100%);
-  color: white;
-  padding: 48px 7vw 90px;
-  position: relative;
-  overflow: hidden;
-}
+      <section class="column services" id="servicios">
+        <div class="section-header">
+          <p class="eyebrow">Servicios</p>
+          <h2>Planifica tu progreso con métricas claras.</h2>
+          <p class="lead">
+            Diseño sesiones personalizadas para cada estilo, con objetivos medibles y ajustes técnicos basados en
+            datos.
+          </p>
+        </div>
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at top right, rgba(255, 255, 255, 0.15), transparent 55%);
-  pointer-events: none;
-}
+        <div class="card-grid">
+          <article class="card">
+            <h3>Natación técnica</h3>
+            <p>Correcciones específicas para crol, espalda, pecho y mariposa.</p>
+            <span class="tag">Piscina + tierra</span>
+          </article>
+          <article class="card">
+            <h3>Análisis matemático</h3>
+            <p>Modelos de rendimiento, eficiencia energética y proyecciones de tiempo.</p>
+            <span class="tag">Ciencia aplicada</span>
+          </article>
+          <article class="card">
+            <h3>Sesiones 1:1</h3>
+            <p>Coaching individual con seguimiento semanal y reportes visuales.</p>
+            <span class="tag">Personalizado</span>
+          </article>
+        </div>
 
-.nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
-  z-index: 1;
-  position: relative;
-}
+        <div class="analysis-panel">
+          <h3>Reporte técnico mensual</h3>
+          <p>
+            Incluye mediciones de ritmo, longitud de brazada, trayectorias óptimas y comparativa con tus objetivos.
+          </p>
+          <div class="panel-metrics">
+            <div>
+              <span class="metric-value">0.3s</span>
+              <span class="metric-label">mejora promedio por 50m</span>
+            </div>
+            <div>
+              <span class="metric-value">15%</span>
+              <span class="metric-label">reducción de resistencia</span>
+            </div>
+          </div>
+        </div>
 
-.logo {
-  font-weight: 700;
-  font-size: 1.2rem;
-  letter-spacing: 0.04em;
-}
+        <div class="contact" id="agenda">
+          <div>
+            <p class="eyebrow">Agenda</p>
+            <h2>Reserva tu sesión y define tu próxima meta.</h2>
+            <p class="lead">
+              Disponible para clases presenciales y acompañamiento remoto con análisis técnico semanal.
+            </p>
+          </div>
+          <form class="contact-form">
+            <label>
+              Nombre completo
+              <input type="text" placeholder="Tu nombre" />
+            </label>
+            <label>
+              Correo electrónico
+              <input type="email" placeholder="tu@email.com" />
+            </label>
+            <label>
+              Objetivo principal
+              <select>
+                <option>Mejorar técnica</option>
+                <option>Prepararme para competencia</option>
+                <option>Analizar mi rendimiento</option>
+              </select>
+            </label>
+            <button class="button primary" type="submit">Enviar solicitud</button>
+          </form>
+        </div>
 
-.nav-links {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.button {
-  padding: 12px 22px;
-  border-radius: 999px;
-  border: 1px solid transparent;
-  font-weight: 600;
-  transition: all 0.25s ease;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.button.primary {
-  background: white;
-  color: var(--navy);
-  box-shadow: 0 10px 30px rgba(11, 29, 58, 0.3);
-}
-
-.button.primary:hover {
-  transform: translateY(-2px);
-}
-
-.button.ghost {
-  border: 1px solid rgba(255, 255, 255, 0.6);
-  color: white;
-}
-
-.hero-content {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  margin-top: 50px;
-  position: relative;
-  z-index: 1;
-}
-
-.hero-content h1 {
-  font-size: clamp(2.3rem, 4vw, 3.5rem);
-  margin-bottom: 20px;
-}
-
-.eyebrow {
-  text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.2em;
-  opacity: 0.8;
-  margin-bottom: 12px;
-}
-
-.lead {
-  font-size: 1.05rem;
-  opacity: 0.9;
-  margin-bottom: 24px;
-}
-
-.hero-actions {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-bottom: 30px;
-}
-
-.metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-
-.metric-value {
-  font-size: 1.6rem;
-  font-weight: 700;
-  display: block;
-}
-
-.metric-label {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-.hero-card {
-  background: rgba(255, 255, 255, 0.12);
-  border-radius: var(--radius);
-  padding: 28px;
-  backdrop-filter: blur(12px);
-  box-shadow: var(--shadow);
-}
-
-.hero-card h3 {
-  font-size: 1.4rem;
-  margin-bottom: 12px;
-}
-
-.hero-card ul {
-  list-style: none;
-  margin-top: 16px;
-  display: grid;
-  gap: 10px;
-}
-
-.section {
-  padding: 80px 7vw;
-  background: var(--sky);
-}
-
-.section.alt {
-  background: #eaf2ff;
-}
-
-.section-header {
-  max-width: 680px;
-  margin-bottom: 40px;
-}
-
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 24px;
-}
-
-.card {
-  background: var(--card);
-  padding: 26px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 12px;
-}
-
-.tag {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: rgba(46, 196, 182, 0.15);
-  color: #0f766e;
-  padding: 6px 14px;
-  border-radius: 999px;
-  font-size: 0.8rem;
-  font-weight: 600;
-  width: fit-content;
-}
-
-.analysis {
-  display: grid;
-  gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  align-items: center;
-}
-
-.analysis-list {
-  list-style: none;
-  display: grid;
-  gap: 14px;
-  margin-top: 20px;
-}
-
-.analysis-panel {
-  background: white;
-  border-radius: var(--radius);
-  padding: 30px;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 18px;
-}
-
-.panel-metrics {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 16px;
-}
-
-.contact {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  align-items: start;
-}
-
-.contact-form {
-  background: white;
-  border-radius: var(--radius);
-  padding: 30px;
-  box-shadow: var(--shadow);
-  display: grid;
-  gap: 18px;
-}
-
-label {
-  display: grid;
-  gap: 8px;
-  font-weight: 600;
-  color: var(--muted);
-}
-
-input,
-select {
-  padding: 12px 14px;
-  border-radius: 12px;
-  border: 1px solid #cbd5f5;
-  font-size: 1rem;
-}
-
-.footer {
-  text-align: center;
-  padding: 30px 7vw 50px;
-  color: var(--muted);
-  font-size: 0.9rem;
-}
-
-@media (max-width: 720px) {
-  .nav {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .nav-links {
-    width: 100%;
-    justify-content: flex-start;
-  }
-}
+        <footer class="footer">
+          <p>© 2024 Onda&Análisis. Entrenamiento acuático y ciencia aplicada.</p>
+        </footer>
+      </section>
+    </main>
+  </body>
+</html>
